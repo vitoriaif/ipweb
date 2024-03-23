@@ -1,16 +1,33 @@
 <form>
     Login:<br/>
     <input type="text" name="senha"><br/>
+
     Senha:<br/>
     <input type="password" name="confirmasenha"><br/>
+
     confirme a Senha:<br/>
     <input type="password" name="confirmasenha"><br/>
+
     Nome:<br/>
+    <input type="text" name="Nome"><br/>
+
+    Sexo:<br/>
     <input type="radio" name="sexo">Masculino<br/>
     <input type="radio" name="Sexo">Feminino<br/>
-    Sexo:<br/>
+
     Email:<br/>
     <input type="email" name="Email"><br/>
+
+    <form action="/action_page.php">
+    <label for="UF">UF:</label>
+         <select name="UF" id="UF">
+        <option value="MA">Maranhão</option>
+        <option value="PI">Piauí</option>
+        <option value="CE">Ceará</option>
+        <option value="BA">Bahia</option>
+      </select> 
+      <br/>
+
     Interesses:<br/>
     <input type="checkbox" name="Interesses">Futebol<br/>
     <input type="checkbox" name="Interesses">Política<br/>
@@ -18,6 +35,12 @@
     <input type="checkbox" name="Interesses">carros<br/>
     <input type="checkbox" name="Interesses">Celebridades<br/>
     <br/>
-    <textarea name="observacoes" rows="5" cols="50"></textarea><br/>  <input type="submit" >
+
+    
+     <form action="/action_page.php">
+    <p><label for="Observações">Observações:</label></p>
+    <textarea id="" name="Observações" rows="4" cols="50"></textarea>
+    </form>
+    <br/>
     <input type="button" value="Enviar">
-</form>
+  
