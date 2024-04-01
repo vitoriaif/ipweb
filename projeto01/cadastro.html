@@ -1,0 +1,50 @@
+<table  width="900" align="center">
+    <h1>cadastre-se</h1>
+    <form>
+      
+        Nome Completo:<br/>
+        <input type="text" name="Nome"><br/>
+    
+        Sexo:<br/>
+        <input type="radio" name="sexo">Masculino<br/>
+        <input type="radio" name="Sexo">Feminino<br/>
+    
+        Email:<br/>
+        <input type="email" name="Email"><br/>
+       
+        Telefone:<br/>
+        <input type="telefone" name="telefone"><br/>
+       <br>
+        <form action="/action_page.php">
+        <label for="UF">UF:</label>
+             <select name="UF" id="UF">
+            <option value="MA">Maranhão</option>
+            <option value="PI">Piauí</option>
+            <option value="CE">Ceará</option>
+            <option value="BA">Bahia</option>
+          </select> 
+          <br/>
+          <br>
+    
+        <form action="action_page.php">
+        <label for="assunto">Assunto:</label>
+<select id="assunto" name="assunto" required>
+  <option value="">Escolha um assunto</option>
+  <option value="duvidas">Dúvidas</option>
+  <option value="orcamento">Solicitar orçamento</option>
+  <option value="elogio">Elogio</option>
+  <option value="reclamacao">Reclamação</option>
+  <option value="sugestao">Sugestão</option>
+</select>
+<br>
+    
+        
+         <form action="/action_page.php">
+        <p><label for="mensagem">mensagem:</label></p>
+        <textarea id="" name="mensagem" rows="4" cols="50"></textarea>
+        </form>
+        <br/>
+        <input type="button" value="Enviar">
+
+</form>
+    
