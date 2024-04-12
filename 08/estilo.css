@@ -1,0 +1,22 @@
+body{
+    background: #d6d6d6;
+}
+
+.container p{
+    clear: both;
+    padding: 10px;
+}
+
+.imagem {
+    width: 250px;
+}
+.noticia{
+    font-family: 'opensans-regular', Arial, sans-serif;
+    background-color: #F5F5DC;
+    border: 1px solid black;
+    color: #333;
+    font-size: 16px;
+    padding: 5px;
+    margin: 10px;
+    float: left;
+}
