@@ -1,1 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Atividade 10</title>
+        <style>
+            body {
+                clear: both;
+                font-family: Arial, sans-serif;
+            }
+
+            nav {
+                border-bottom: 2px solid #ccc;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                background: #ffffff;
+            }
+
+            footer {
+                font-size: 10px;
+                text-align: center;
+                padding: 10px;
+                border-top: 2px solid #ccc;
+                background: #f9f9f9;
+            }
+
+            .menu {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px;
+            }
+
+            .logo {
+                width: 100px;
+            }
+
+            .links {
+                display: flex;
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+
+            .links a {
+                margin-left: 10px;
+            }
+
+            .logo-canais {
+                width: 30px;
+            }
+
+            .header {
+                text-align: center;
+                color: #0e0370;
+                margin: 20px 0;
+            }
+
+            .noticia {
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                color: #333;
+                font-size: 14px;
+                padding: 10px;
+                margin: 10px;
+                width: calc(33.333% - 40px);
+                box-sizing: border-box;
+                float: left;
+            }
+
+            .imagem-noticia {
+                width: 100%;
+                border-radius: 10px;
+                margin-bottom: 10px;
+            }
+
+            .logo-noticia {
+                width: 15px;
+            }
+
+            .logo-noticia-terra {
+                width: 50px;
+            }
+
+            .logo-noticia-cnn {
+                width: 25px;
+            }
+
+            p {
+                font-size: 16px;
+                margin: 0 0 10px 0;
+            }
+
+            a:link {
+                color: #9fc1fb;
+                text-decoration: none;
+            }
+
+            a:visited {
+                color: #48b7f7;
+            }
+
+            a:hover {
+                color: #3500a8;
+            }
+
+            a:active {
+                color: #FF1493;
+            }
+
+            @media screen and (max-width: 768px) {
+                .noticia {
+                    width: calc(50% - 20px);
+                }
+            }
+
+            @media screen and (max-width: 480px) {
+                .noticia {
+                    width: 100%;
+                }
+
+                .menu {
+                    flex-direction: column;
+                }
+
+                .links {
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                .links a {
+                    margin-left: 0;
+                    margin-bottom: 10px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="menu">
+            <div class="logo">
+                <a href="index.html">
+                    <img class="logo" src="imagem/360_F_583342356_OE57DmNMJ1wCzwavInyGYzT6Mdg5lUz3-removebg-preview.png" alt="Logo">
+                </a>
+            </div>
+            <div class="links">
+                <a href="https://g1.globo.com/">
+                    <img class="logo-canais" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAA4CAMAAACMj4vYAAAAb1BMVEX////CFgvCFwvAAAC/AADDGhDCEgDajYvDJiDCEwb79PT9+vr57+/hpqX89/fqw8Lsycn14+PFLinv0tLmuLfHOjbKTkvOYF736enQaGbls7PScW/fnp3DIhvGNjHz3d3IQz/clJPWfnzNWVbYhoUDSYKsAAACGElEQVRIic2W28KqIBCFkRlHqVDTMk3t/P7PuDHBRKHf7va6ymZ9MDADytgPqmpIf/G/EKhbbz8DBJzztfbiiELZebjOvmmQOF8PtAicrwe23ZDNaiBFzv9HgMRPgMBLJ5bALjtLme7mwBUBWxbTHJBHRBVCvB3U0x1J/RTX9xStGmQOSEQKBhHmewYklDAax7OBzQ1F8BFhEb6fwQNUqhEtCQiDL8BuzGYuD5CDx+8BIhwTwV7wB1AZP1C7ZyzJ6s8GOIGHHhEbEyuAvgF6PBj9/aTCD6RDRhRPu+GAfiAaMsLDFGA5eYHTEMKtBdzBC+TvdOlo+VmGXkAnW9vA1Q/oPTqtBtwppX7ALDqxgMi/aLOt0gIC8VfhBE398kvhtib2XCzZ00uNbj4oNzp2GNvVCezH4fBV7JLqUJo/fAfoNTtAk/PqOaKXH48oS8IFoWeBuxNgyRFtP5a6vaUbeL9RJ4mg1NWZnJL5VVk16roAIgLAcs+krn/2Afqg0qS86esZd/GpvzpMcbAao1ked10X+74EhtIJ8IQXOuOiXSa65g+7t9kGxHyTprqodVqRnb4zAly8jXr1OygQor0ZvjXNAaVzgmE41Udwet2j5oZgehUL3wSm93p9Wm9+MWjVvs4jSJxA63n9EF6dfnW+yIWA168kw89Cjb125zOuvH63nuhvD1UVrJ37Y6uQj+eFh3nZtNn2i+8fl2cbEOK6RooAAAAASUVORK5CYII=" alt="G1">
+                </a>
+                <a href="https://www.cnnbrasil.com.br/">
+                    <img class="logo-canais" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAMAAACfWMssAAAAZlBMVEXMFBf////JAADLAQnMEBP45+fQQEHWXl7mp6f66+nlnp3RPjrwycj68PDqtrXMGhvbd3f9+PjSSEj02dnPMzTsvbzuw8LgiorYaGjZbm3NISDhkZDdgIDVVVXz1NPilpbOKCnpr67IVIhAAAAByUlEQVRIie2U23ajMAxFfQ4m3ClgSi5NaPj/n6xkkxUmMG3fZh44D4mWrG0jWbIxu3bt+k9lVcFY+p7Gwv9URNo3kTVk8cYQYmkL0lu6dLmsSMuuzqAiry1QGuu97+L5VFKsqgOS6E+OlxKzePJ/lZ7Jwdu1kKwRH1YgO10fjo2IDm0i8DuNvQOuSCWc26DtBZt4rsuyHFhhuuYN0EXRTX7HfkT2F5Ax0Nza+VMrpDlMDMcoAYrKXYAPboE8yopm1jrnxgCWEnSlghnOE2A3wUy+RbiGXh7EbUA7gy21PmtQM7zWEsqwTQB1q7TzIPIr0K9BSiEuFUqaJYjjJ3AOIKQIY7oGJUK2P76AWqVsBks5Ov4d2FaoE8UFlJp32h+/+tRK0rqPAUxHxNwAN4vTSlruHsBaA/I1uHkd/ipOUwDlKsD2hwZwDgFkKY0+g1Y68vRTy2nbKqgdLhfoQX5IGVz1bZOrklpAQxkLjrbSqZJsxnv5/ViJpBBOhkqyjQ+5H2TNOC0ki9cnYDHIQSfZmbdg60vDyZsDzYueT4cqa3wAb5leQvRoExnujdfq8ViJDPnw9T3nrMiD2eL8sQ8tXcvVb
+
+
+
+
 
