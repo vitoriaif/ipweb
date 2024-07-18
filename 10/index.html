@@ -1,3 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Atividade 10</title>
+        <style>
+            body {
+                clear: both;
+            }
+
+            nav {
+                border-bottom: 2px solid #ccc;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            }
+
+            footer {
+                font-size: 10px;
+            }
+
+            .menu {
+                background: #ffffff;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-size: 18px;
+                top: 0px;
+                margin: 0px;
+                padding: 10px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .logo {
+                width: 100px;
+                text-align: left;
+            }
+
+            .logo-canais {
+                width: 30px;
+                padding-left: 10px;
+            }
+
+            .links {
+                list-style: none;
+                justify-content: space-between;
+                padding: 0;
+                margin: 0;
+            }
+
+            .header {
+                text-align: center;
+                color: #0e0370;
+            }
+
+            .noticia {
+                font-family: 'opensans-regular', Arial, sans-serif;
+                color: #333;
+                text-align: left;
+                font-size: 14px;
+                padding: 5px;
+                margin: 10px;
+                width: 300px;
+                float: left;
+            }
+
+            .imagem-noticia {
+                width: 180px;
+                border-radius: 20px;
+                padding: 10px;
+                float: right;
+            }
+
+            .logo-noticia {
+                width: 15px;
+            }
+
+            .logo-noticia-terra {
+                width: 50px;
+            }
+
+            .logo-noticia-cnn {
+                width: 25px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+
+            a:link {
+                color: #9fc1fb;
+                text-decoration: none;
+            }
+
+            a:visited {
+                color: #48b7f7;
+            }
+
+            a:hover {
+                color: #3500a8;
+            }
+
+            a:active {
+                color: #FF1493;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="menu">
+            <div class="logo">
+                <a href="index.html">
+                    <img class="logo" src="imagem/360_F_583342356_OE57DmNMJ1wCzwavInyGYzT6Mdg5lUz3-removebg-preview.png">
+                </a>
+            </div>
+            <div class="links">
+                <a href="https://g1.globo.com/">
+                    <img class="logo-canais" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAA4CAMAAACMj4vYAAAAb1BMVEX////CFgvCFwvAAAC/AADDGhDCEgDajYvDJiDCEwb79PT9+vr57+/hpqX89/fqw8Lsycn14+PFLinv0tLmuLfHOjbKTkvOYF736enQaGbls7PScW/fnp3DIhvGNjHz3d3IQz/clJPWfnzNWVbYhoUDSYKsAAACGElEQVRIic2W28KqIBCFkRlHqVDTMk3t/P7PuDHBRKHf7va6ymZ9MDADytgPqmpIf/G/EKhbbz8DBJzztfbiiELZebjOvmmQOF8PtAicrwe23ZDNaiBFzv9HgMRPgMBLJ5bALjtLme7mwBUBWxbTHJBHRBVCvB3U0x1J/RTX9xStGmQOSEQKBhHmewYklDAax7OBzQ1F8BFhEb6fwQNUqhEtCQiDL8BuzGYuD5CDx+8BIhwTwV7wB1AZP1C7ZyzJ6s8GOIGHHhEbEyuAvgF6PBj9/aTCD6RDRhRPu+GAfiAaMsLDFGA5eYHTEMKtBdzBC+TvdOlo+VmGXkAnW9vA1Q/oPTqtBtwppX7ALDqxgMi/aLOt0gIC8VfhBE398kvhtib2XCzZ00uNbj4oNzp2GNvVCezH4fBV7JLqUJo/fAfoNTtAk/PqOaKXH48oS8IFoWeBuxNgyRFtP5a6vaUbeL9RJ4mg1NWZnJL5VVk16roAIgLAcs+krn/2Afqg0qS86esZd/GpvzpMcbAao1ked10X+74EhtIJ8IQXOuOiXSa65g+7t9kGxHyTprqodVqRnb4zAly8jXr1OygQor0ZvjXNAaVzgmE41Udwet2j5oZgehUL3wSm93p9Wm9+MWjVvs4jSJxA63n9EF6dfnW+yIWA168kw89Cjb125zOuvH63nuhvD1UVrJ37Y6uQj+eFh3nZtNn2i+8fl2cbEOK6RooAAAAASUVORK5CYII=">
+                </a>
+                <a href="https://www.cnnbrasil.com.br/">
+                    <img class="logo-canais" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAMAAACfWMssAAAAZlBMVEXMFBf////JAADLAQnMEBP45+fQQEHWXl7mp6f66+nlnp3RPjrwycj68PDqtrXMGhvbd3f9+PjSSEj02dnPMzTsvbzuw8LgiorYaGjZbm3NISDhkZDdgIDVVVXz1NPilpbOKCnpr67IVIhAAAAByUlEQVRIie2U23ajMAxFfQ4m3ClgSi5NaPj/n6xkkxUmMG3fZh44D4mWrG0jWbIxu3bt+k9lVcFY+p7Gwv9URNo3kTVk8cYQYmkL0lu6dLmsSMuuzqAiry1QGuu97+L5VFKsqgOS6E+OlxKzePJ/lZ7Jwdu1kKwRH1YgO10fjo2IDm0i8DuNvQOuSCWc26DtBZt4rsuyHFhhuuYN0EXRTX7HfkT2F5Ax0Nza+VMrpDlMDMcoAYrKXYAPboE8yopm1jrnxgCWEnSlghnOE2A3wUy+RbiGXh7EbUA7gy21PmtQM7zWEsqwTQB1q7TzIPIr0K9BSiEuFUqaJYjjJ3AOIKQIY7oGJUK2P76AWqVsBks5Ov4d2FaoE8UFlJp32h+/+tRK0rqPAUxHxNwAN4vTSlruHsBaA/I1uHkd/ipOUwDlKsD2hwZwDgFkKY0+g1Y68vRTy2nbKqgdLhfoQX5IGVz1bZOrklpAQxkLjrbSqZJsxnv5/ViJpBBOhkqyjQ+5H2TNOC0ki9cnYDHIQSfZmbdg60vDyZsDzYueT4cqa3wAb5leQvRoExnujdfq8ViJDPnw9T3nrMiD2eL8sQ8tXcvVbWzXrl3/VF+IFhnvR1x/WQAAAABJRU5ErkJggg==">
+                </a>
+                <a href="https://noticias.uol.com.br/">
+                    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIABQAOAMBIgACEQEDEQH/xAAaAAADAQADAAAAAAAAAAAAAAAABgcFAQME/8QALxAAAQMDAgQEBQUBAAAAAAAAAQIDBAAFEQYhEjFBUQcTInEyQmGBkRQjYqHhCP/EABkBAAIDAQAAAAAAAAAAAAAAAAAGAwQFAf/EAB8RAAICAQQDAAAAAAAAAAAAAAABAgQDERMxcQVBYf/aAAwDAQACEQMRAD8ApF4vJU84hLxajtqKPScKcUOfLfAO1Z0a5NqcAjyVtudMEjP52P3pfuLq2r5OgSfS6y6S2D8yD6gR+aXtQXJ9l8RmFlsBIKlJ2JpKzY7Vm005NPvhDhV8XHJFQj7WpXjfxH09cblIa43Lcw4662g44whBVt2yBWBpbxKjai07fLy1bXWUWllTqm1OglzCFKwDjb4aztGQrjedC6gbecWtc+O7GjrdOc/tqTnPUZVj7GpDpLWCNLaa1RYZsB9Um5MqYSfh8pZSpCgsHcYz/WKbau5sx3HrIWr+BYLM8SfDK1D8bbG5ZJFylw32FoeDTMVK0rceOMkjlgDbJP8AldVh8arNe3nIEqK/a33UKSw6twKQVY2BVtwk9NsfWoQuxXGHZ4V+lQVqtkh9TaFHIC+HGQSOQO4B/irtTDqufbtdaitcTSGnk291aEsFttCU+YruQnbCR83bnsKsFQo//Pt+u96kXsXe5y5oaQx5YkPKXw5K84z7CilDwa1EvSGrpFkuMB7zri+1EUAQFMuBZTuD09Rz7daKALrqnTNtvrPmzELRIZT6H2VcKwOeM9R70lae0ZbbncVic9MeS0fhU6PUOxOM/giiioJ44uabRr07tjHWmoTa04+dFPjR2YsdtiM2lpptPChCRgJFZtw0vp+5yv1VxslulSOrr0ZClH3JG/3ooqcyW23qzQfhxZERUN+My7FUngUwtsKQU9uE7Y+leS1afs1mWtdptUKGtwYWqOwlBUOxIHKiig4cyrFaJk9qfLtcJ6a0pKm5DjCS4kpOQQrGdjyooooA/9k=">
+                </a>
+                <a href="https://www.terra.com.br/noticias/">
+                    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIABgAOAMBEQACEQEDEQH/xAAZAAACAwEAAAAAAAAAAAAAAAADBQABBAf/xAAoEAACAQMDAgUFAAAAAAAAAAABAgMABBEFEiEGMRQiUWGBEzJBcYL/xAAaAQACAwEBAAAAAAAAAAAAAAAAAwECBAUG/8QAKREAAQQBAwIFBQEAAAAAAAAAAQACAxEhBBIxYaFBUXGBsQUTIpHxBv/aAAwDAQACEQMRAD8A7gzBRliAPUmoJA5UgE8K6lQpQhShCFPcQ267p5UjX1Y4pM2oihFyOA9VBcByldz1Totqoa4vgik43GNsA+5xxU6OePWvMenO4gX7e/PsiI/ddtZkpvFIk0aSxOrxuoZWU5DA9iKarEEGisHUCM+kzBd3BRiVGSAGBJH6ArJrml0Brp2IK06IgTi+vcFKrq/ufEMsN6qhUTwzSSqomyB5iNvmyeOMfFZJJ5NxAf5bbIzjnjNnyWyOCPaC5nnuoHGeOcY80YSXcibjezKZb9ocLtwiBmGBx7dzVw6VwvecuI8MAE9EvbGDWwYaD45NDqhG9kUx79RkW78YsTWp28J9QDtjPK87vzmqGc2Lk/LcBtxxdevGbTBC03Uf47SbzzV+nPgidRxb5sN9rx4Hwa4n+gaW6tryMV8E38rgzNJKxdXaroSdOXliLm1+vLBthto2Bfefs8o574r1en1UMDWyxcVgDqu19N0kzp2Pa0hoOTVCvHsmfRUVxB0tp0V5G8cqRY2OMFRk7QR+OMcUacERNDkv6k5j9XI5hsX/AHundOWFVgccDjtQhXgUIVYGc4oQs19p9pqCKl5AsoU5XORj5FJm08UwqQWnQ6iWE3GaQ7PR9NspTNa2MEcp4MgQbz/XepjgjiFMbStLqp5RT3kjt+lupqzr/9k=">
+                </a>
+            </div>
+        </nav>
+        <header class="header">
+            <h1>Notícias</h1>
+        </header>
+        <div>
+            <div class="noticia">
+                <header>
+                    <img class="logo-noticia-terra" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIABgAOAMBEQACEQEDEQH/xAAZAAACAwEAAAAAAAAAAAAAAAADBQABBAf/xAAoEAACAQMDAgUFAAAAAAAAAAABAgMABBEFEiEGMRQiUWGBEzJBcYL/xAAaAQACAwEBAAAAAAAAAAAAAAAAAwECBAUG/8QAKREAAQQBAwIFBQEAAAAAAAAAAQACAxEhBBIxYaFBUXGBsQUTIpHxBv/aAAwDAQACEQMRAD8A7gzBRliAPUmoJA5UgE8K6lQpQhShCFPcQ267p5UjX1Y4pM2oihFyOA9VBcByldz1Totqoa4vgik43GNsA+5xxU6OePWvMenO4gX7e/PsiI/ddtZkpvFIk0aSxOrxuoZWU5DA9iKarEEGisHUCM+kzBd3BRiVGSAGBJH6ArJrml0Brp2IK06IgTi+vcFKrq/ufEMsN6qhUTwzSSqomyB5iNvmyeOMfFZJJ5NxAf5bbIzjnjNnyWyOCPaC5nnuoHGeOcY80YSXcibjezKZb9ocLtwiBmGBx7dzVw6VwvecuI8MAE9EvbGDWwYaD45NDqhG9kUx79RkW78YsTWp28J9QDtjPK87vzmqGc2Lk/LcBtxxdevGbTBC03Uf47SbzzV+nPgidRxb5sN9rx4Hwa4n+gaW6tryMV8E38rgzNJKxdXaroSdOXliLm1+vLBthto2Bfefs8o574r1en1UMDWyxcVgDqu19N0kzp2Pa0hoOTVCvHsmfRUVxB0tp0V5G8cqRY2OMFRk7QR+OMcUacERNDkv6k5j9XI5hsX/AHundOWFVgccDjtQhXgUIVYGc4oQs19p9pqCKl5AsoU5XORj5FJm08UwqQWnQ6iWE3GaQ7PR9NspTNa2MEcp4MgQbz/XepjgjiFMbStLqp5RT3kjt+lupqzr/9k=">
+                </header>
+                <img class="imagem-noticia" src="imagensn/n3.webp">
+                <p> Rainha do Mar: Ana Marcela vai a Paris para confirmar legado e colorir o Rio Sena
+            </p>
+                <footer>17 jul 2024 - 05h00
+            </footer>
+            </div>
+            <div class="noticia">
+                <header>
+                    <img class="logo-noticia" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAA4CAMAAACMj4vYAAAAb1BMVEX////CFgvCFwvAAAC/AADDGhDCEgDajYvDJiDCEwb79PT9+vr57+/hpqX89/fqw8Lsycn14+PFLinv0tLmuLfHOjbKTkvOYF736enQaGbls7PScW/fnp3DIhvGNjHz3d3IQz/clJPWfnzNWVbYhoUDSYKsAAACGElEQVRIic2W28KqIBCFkRlHqVDTMk3t/P7PuDHBRKHf7va6ymZ9MDADytgPqmpIf/G/EKhbbz8DBJzztfbiiELZebjOvmmQOF8PtAicrwe23ZDNaiBFzv9HgMRPgMBLJ5bALjtLme7mwBUBWxbTHJBHRBVCvB3U0x1J/RTX9xStGmQOSEQKBhHmewYklDAax7OBzQ1F8BFhEb6fwQNUqhEtCQiDL8BuzGYuD5CDx+8BIhwTwV7wB1AZP1C7ZyzJ6s8GOIGHHhEbEyuAvgF6PBj9/aTCD6RDRhRPu+GAfiAaMsLDFGA5eYHTEMKtBdzBC+TvdOlo+VmGXkAnW9vA1Q/oPTqtBtwppX7ALDqxgMi/aLOt0gIC8VfhBE398kvhtib2XCzZ00uNbj4oNzp2GNvVCezH4fBV7JLqUJo/fAfoNTtAk/PqOaKXH48oS8IFoWeBuxNgyRFtP5a6vaUbeL9RJ4mg1NWZnJL5VVk16roAIgLAcs+krn/2Afqg0qS86esZd/GpvzpMcbAao1ked10X+74EhtIJ8IQXOuOiXSa65g+7t9kGxHyTprqodVqRnb4zAly8jXr1OygQor0ZvjXNAaVzgmE41Udwet2j5oZgehUL3wSm93p9Wm9+MWjVvs4jSJxA63n9EF6dfnW+yIWA168kw89Cjb125zOuvH63nuhvD1UVrJ37Y6uQj+eFh3nZtNn2i+8fl2cbEOK6RooAAAAASUVORK5CYII=">
+                </header>
+                <img class="imagem-noticia" src="imagensn/n2.avif">
+                <p> Silvio Santos está sob cuidados intensivos em hospital de São Paulo
+                    Apresentador passa por exames após contrair a gripe H1N1
+            </p>
+                <footer> 17/07/2024 - 17H20 (ATUALIZADO EM 17/07/2024 - 17H38)
+            </footer>
+            </div>
+            <div class="noticia">
+                <header>
+                    <img class="logo-noticia-terra" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIABQAOAMBIgACEQEDEQH/xAAaAAADAQADAAAAAAAAAAAAAAAABgcFAQME/8QALxAAAQMDAgQEBQUBAAAAAAAAAQIDBAAFEQYhEjFBUQcTInEyQmGBkRQjYqHhCP/EABkBAAIDAQAAAAAAAAAAAAAAAAAGAwQFAf/EAB8RAAICAQQDAAAAAAAAAAAAAAABAgQDERMxcQVBYf/aAAwDAQACEQMRAD8ApF4vJU84hLxajtqKPScKcUOfLfAO1Z0a5NqcAjyVtudMEjP52P3pfuLq2r5OgSfS6y6S2D8yD6gR+aXtQXJ9l8RmFlsBIKlJ2JpKzY7Vm005NPvhDhV8XHJFQj7WpXjfxH09cblIa43Lcw4662g44whBVt2yBWBpbxKjai07fLy1bXWUWllTqm1OglzCFKwDjb4aztGQrjedC6gbecWtc+O7GjrdOc/tqTnPUZVj7GpDpLWCNLaa1RYZsB9Um5MqYSfh8pZSpCgsHcYz/WKbau5sx3HrIWr+BYLM8SfDK1D8bbG5ZJFylw32FoeDTMVK0rceOMkjlgDbJP8AldVh8arNe3nIEqK/a33UKSw6twKQVY2BVtwk9NsfWoQuxXGHZ4V+lQVqtkh9TaFHIC+HGQSOQO4B/irtTDqufbtdaitcTSGnk291aEsFttCU+YruQnbCR83bnsKsFQo//Pt+u96kXsXe5y5oaQx5YkPKXw5K84z7CilDwa1EvSGrpFkuMB7zri+1EUAQFMuBZTuD09Rz7daKALrqnTNtvrPmzELRIZT6H2VcKwOeM9R70lae0ZbbncVic9MeS0fhU6PUOxOM/giiioJ44uabRr07tjHWmoTa04+dFPjR2YsdtiM2lpptPChCRgJFZtw0vp+5yv1VxslulSOrr0ZClH3JG/3ooqcyW23qzQfhxZERUN+My7FUngUwtsKQU9uE7Y+leS1afs1mWtdptUKGtwYWqOwlBUOxIHKiig4cyrFaJk9qfLtcJ6a0pKm5DjCS4kpOQQrGdjyooooA/9k=">
+                </header>
+                <img class="imagem-noticia" src="imagensn/n4.jpg">
+                <p> Brasil teve 1 registro de mulher estuprada a cada 6 minutos em 2023
+                    Dados apontam piora em todos os indicadores de violência contra mulher, diz Anuário Brasileiro da Segurança Pública
+                    
+            </p>
+                <footer> 18.jul.2024 às 10h00
 
 
 
