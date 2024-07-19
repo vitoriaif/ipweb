@@ -1,228 +1,207 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> Tags Article, Section, Time, Aside </title>
-        <style>
-            body {
-                clear: both;
-            }
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tags Article, Section, Time, Aside</title>
+    <style>
+        body {
+            clear: both;
+        }
 
-            nav {
-                border-bottom: 2px solid #ccc;
-                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            }
-    
-             article{
-            position: absolute;
-            width:60%;
-            top: 15%;
-            left: 20%;
-            right: 20%;
+        nav {
+            border-bottom: 2px solid #ccc;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        article {
+            width: 60%;
+            margin: 0 auto;
             text-align: center;
-            align-items: center;
-            align-content: center
-             }
-             aside{
-            position: absolute;
+        }
+
+        aside {
             width: 20%;
-            top: 15%;
-            left: 85%;
-            right: 0%;
+            float: right;
             text-align: center;
-             } 
-             .rodape{
-            position: absolute;
+        }
+
+        .rodape {
             width: 100%;
-            top: 90%;
             text-align: center;
             font-size: 8px;
-             }
-            footer {
-                font-size: 10px;
-            }
+            position: absolute;
+            bottom: 0;
+        }
 
-            .menu {
-                background: #ffffff;
-                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-                font-size: 18px;
-                top: 0px;
-                margin: 0px;
-                padding: 10px;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-            }
+        footer {
+            font-size: 10px;
+        }
 
-            .logo {
-                width: 100px;
-                text-align: left;
-            }
+        .menu {
+            background: #ffffff;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 18px;
+            top: 0px;
+            margin: 0px;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-            .logo-canais {
-                width: 30px;
-                padding-left: 10px;
-            }
+        .logo {
+            width: 100px;
+            text-align: left;
+        }
 
-            .links {
-                list-style: none;
-                justify-content: space-between;
-                padding: 0;
-                margin: 0;
-            }
+        .logo-canais {
+            width: 30px;
+            padding-left: 10px;
+        }
 
-            .header {
-                text-align: center;
-                color: #050507;
-            }
+        .links {
+            list-style: none;
+            justify-content: space-between;
+            padding: 0;
+            margin: 0;
+        }
 
-            .noticia {
-                font-family: 'opensans-regular', Arial, sans-serif;
-                color: #333;
-                text-align: left;
-                font-size: 14px;
-                padding: 5px;
-                margin: 10px;
-                width: 300px;
-                float: left;
-            }
+        .header {
+            text-align: center;
+            color: #050507;
+        }
 
-            .imagem-noticia {
-                width: 180px;
-                border-radius: 20px;
-                padding: 10px;
-                float: right;
-            }
+        .noticia {
+            font-family: 'opensans-regular', Arial, sans-serif;
+            color: #333;
+            text-align: left;
+            font-size: 14px;
+            padding: 5px;
+            margin: 10px;
+            width: calc(50% - 40px);
+            float: left;
+        }
 
-            .logo-noticia {
-                width: 15px;
-            }
+        .imagem-noticia {
+            width: 180px;
+            border-radius: 20px;
+            padding: 10px;
+            float: right;
+        }
 
-            .logo-noticia-terra {
-                width: 50px;
-            }
+        .logo-noticia {
+            width: 15px;
+        }
 
-            .logo-noticia-cnn {
-                width: 25px;
-            }
+        .logo-noticia-terra {
+            width: 50px;
+        }
 
-            p {
-                font-size: 16px;
-            }
+        .logo-noticia-cnn {
+            width: 25px;
+        }
 
-            a:link {
-                color: #9fc1fb;
-                text-decoration: none;
-            }
+        p {
+            font-size: 16px;
+        }
 
-            a:visited {
-                color: #48b7f7;
-            }
+        a:link {
+            color: #9fc1fb;
+            text-decoration: none;
+        }
 
-            a:hover {
-                color: #3500a8;
-            }
+        a:visited {
+            color: #48b7f7;
+        }
 
-            a:active {
-                color: #FF1493;
-            }
-        </style>
-    </head>
-    <body>
+        a:hover {
+            color: #3500a8;
+        }
+
+        a:active {
+            color: #FF1493;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Notícias</h1>
+    </header>
+    <nav class="menu">
+        <h2>Educação</h2>
+        <h2>Esporte</h2>
+        <h2>Celebridades</h2>
+        <h2>Violência</h2>
+        <h2>Saúde</h2>
+        <h2>Política</h2>
+    </nav>
+    <main>
         <article>
-            <header class="header">
-                <h1> Noticias </h1>
-            </header>
-            <nav class="propaganda">
-                <h2>Eduação</h2>
-                <h2>Esporte</h2>
-                <h2>Celebridades</h2>
-                <h2>Violência</h2>
-                <h2>Saúde</h2>
-                <h2>Política</h2>
-            </nav>
-            <div>
-             <section class="noticia">
-                <header>
-                    <img class="logo-noticia-terra" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIABgAOAMBEQACEQEDEQH/xAAZAAACAwEAAAAAAAAAAAAAAAADBQABBAf/xAAoEAACAQMDAgUFAAAAAAAAAAABAgMABBEFEiEGMRQiUWGBEzJBcYL/xAAaAQACAwEBAAAAAAAAAAAAAAAAAwECBAUG/8QAKREAAQQBAwIFBQEAAAAAAAAAAQACAxEhBBIxYaFBUXGBsQUTIpHxBv/aAAwDAQACEQMRAD8A7gzBRliAPUmoJA5UgE8K6lQpQhShCFPcQ267p5UjX1Y4pM2oihFyOA9VBcByldz1Totqoa4vgik43GNsA+5xxU6OePWvMenO4gX7e/PsiI/ddtZkpvFIk0aSxOrxuoZWU5DA9iKarEEGisHUCM+kzBd3BRiVGSAGBJH6ArJrml0Brp2IK06IgTi+vcFKrq/ufEMsN6qhUTwzSSqomyB5iNvmyeOMfFZJJ5NxAf5bbIzjnjNnyWyOCPaC5nnuoHGeOcY80YSXcibjezKZb9ocLtwiBmGBx7dzVw6VwvecuI8MAE9EvbGDWwYaD45NDqhG9kUx79RkW78YsTWp28J9QDtjPK87vzmqGc2Lk/LcBtxxdevGbTBC03Uf47SbzzV+nPgidRxb5sN9rx4Hwa4n+gaW6tryMV8E38rgzNJKxdXaroSdOXliLm1+vLBthto2Bfefs8o574r1en1UMDWyxcVgDqu19N0kzp2Pa0hoOTVCvHsmfRUVxB0tp0V5G8cqRY2OMFRk7QR+OMcUacERNDkv6k5j9XI5hsX/AHundOWFVgccDjtQhXgUIVYGc4oQs19p9pqCKl5AsoU5XORj5FJm08UwqQWnQ6iWE3GaQ7PR9NspTNa2MEcp4MgQbz/XepjgjiFMbStLqp5RT3kjt+lupqzr/9k=">
-                </header>
-                <article>
-                <img class="imagem-noticia" src="imagensn/n3.webp">
-                <p> Rainha do Mar: Ana Marcela vai a Paris para confirmar legado e colorir o Rio Sena
-            </p>
-            </article>
-            <footer>17 jul 2024 - 05h00
-            </footer>
-             </section>
             <section class="noticia">
                 <header>
-                <article>
-                    <img class="logo-noticia" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAA4CAMAAACMj4vYAAAAb1BMVEX////CFgvCFwvAAAC/AADDGhDCEgDajYvDJiDCEwb79PT9+vr57+/hpqX89/fqw8Lsycn14+PFLinv0tLmuLfHOjbKTkvOYF736enQaGbls7PScW/fnp3DIhvGNjHz3d3IQz/clJPWfnzNWVbYhoUDSYKsAAACGElEQVRIic2W28KqIBCFkRlHqVDTMk3t/P7PuDHBRKHf7va6ymZ9MDADytgPqmpIf/G/EKhbbz8DBJzztfbiiELZebjOvmmQOF8PtAicrwe23ZDNaiBFzv9HgMRPgMBLJ5bALjtLme7mwBUBWxbTHJBHRBVCvB3U0x1J/RTX9xStGmQOSEQKBhHmewYklDAax7OBzQ1F8BFhEb6fwQNUqhEtCQiDL8BuzGYuD5CDx+8BIhwTwV7wB1AZP1C7ZyzJ6s8GOIGHHhEbEyuAvgF6PBj9/aTCD6RDRhRPu+GAfiAaMsLDFGA5eYHTEMKtBdzBC+TvdOlo+VmGXkAnW9vA1Q/oPTqtBtwppX7ALDqxgMi/aLOt0gIC8VfhBE398kvhtib2XCzZ00uNbj4oNzp2GNvVCezH4fBV7JLqUJo/fAfoNTtAk/PqOaKXH48oS8IFoWeBuxNgyRFtP5a6vaUbeL9RJ4mg1NWZnJL5VVk16roAIgLAcs+krn/2Afqg0qS86esZd/GpvzpMcbAao1ked10X+74EhtIJ8IQXOuOiXSa65g+7t9kGxHyTprqodVqRnb4zAly8jXr1OygQor0ZvjXNAaVzgmE41Udwet2j5oZgehUL3wSm93p9Wm9+MWjVvs4jSJxA63n9EF6dfnW+yIWA168kw89Cjb125zOuvH63nuhvD1UVrJ37Y6uQj+eFh3nZtNn2i+8fl2cbEOK6RooAAAAASUVORK5CYII=">
+                    <img class="logo-noticia-terra" src="data:image/jpeg;base64,...">
                 </header>
-                <img class="imagem-noticia" src="imagensn/n2.avif">
-                <p> Silvio Santos está sob cuidados intensivos em hospital de São Paulo
-                    Apresentador passa por exames após contrair a gripe H1N1
-            </p>
+                <article>
+                    <img class="imagem-noticia" src="imagensn/n3.webp">
+                    <p>Rainha do Mar: Ana Marcela vai a Paris para confirmar legado e colorir o Rio Sena</p>
+                </article>
+                <footer>17 jul 2024 - 05h00</footer>
+            </section>
+            <section class="noticia">
+                <header>
+                    <img class="logo-noticia" src="data:image/png;base64,...">
+                </header>
+                <article>
+                    <img class="imagem-noticia" src="imagensn/n2.avif">
+                    <p>Silvio Santos está sob cuidados intensivos em hospital de São Paulo. Apresentador passa por exames após contrair a gripe H1N1</p>
+                </article>
+                <footer>17/07/2024 - 17H20 (ATUALIZADO EM 17/07/2024 - 17H38)</footer>
+            </section>
+            <section class="noticia">
+                <header>
+                    <img class="logo-noticia-terra" src="data:image/jpeg;base64,...">
+                </header>
+                <article>
+                    <img class="imagem-noticia" src="imagensn/n4.jpg">
+                    <p>Brasil teve 1 registro de mulher estuprada a cada 6 minutos em 2023. Dados apontam piora em todos os indicadores de violência contra mulher, diz Anuário Brasileiro da Segurança Pública</p>
+                </article>
+                <footer>18 jul 2024 - 10h00</footer>
+            </section>
+            <section class="noticia">
+                <header>
+                    <img class="logo-noticia-cnn" src="data:image/png;base64,...">
+                </header>
+                <article>
+                    <img class="imagem-noticia" src="imagensn/n1.avif">
+                    <p>J.D. Vance: por que escolha de vice de Trump preocupa Europa. Diplomatas e políticos expressam preocupação com as repetidas críticas de Vance à ajuda dos EUA à Ucrânia.</p>
+                </article>
+                <footer>11 abr 2024 - 16h40 (atualizado às 17h53)</footer>
+            </section>
+            <section class="noticia">
+                <header>
+                    <img class="logo-noticia-cnn" src="https://th.bing.com/th/id/OIP.Q1OZHV-NIrqFmREUweptbAAAAA?w=187&h=90&c=7&r=0&o=5&pid=1.7">
+                </header>
+                <article>
+                    <img class="imagem-noticia" src="imagensn/n5.jpeg">
+                    <p>HGV realiza cirurgia rara para tratar neuralgia do trigêmeo conhecida como a pior dor do mundo</p>
+                </article>
+                <footer>18 julho 2024 - 15h35</footer>
+            </section>
+            <section class="noticia">
+                <header>
+                    <img class="logo-noticia-cnn" src="https://th.bing.com/th?id=ODLS.ca404faa-828b-408d-a4ca-32fdadf143e9&w=32&h=32&qlt=90&pcl=fffffa&o=6&pid=1.2">
+                </header>
+                <article>
+                    <img class="imagem-noticia" src="https://newr7-r7-prod.web.arc-cdn.net/resizer/v2/R4TMQNXJIVEOVDY5ZSBQHQR5XY.jpg?auth=0c4cf81683caa2e29307b705fa3a38c2b8c3e54fc84b29c7aaa2f7841d8a79a7&width=770&height=513">
+                    <p>Relatório da CGU aponta falhas no programa de merenda escolar entre os anos de 2015 e 2020</p>
+                </article>
+                <footer>18/07/2024 - 07H40 (ATUALIZADO EM 18/07/2024 - 07H41)</footer>
+            </section>
         </article>
-                <footer> 17/07/2024 - 17H20 (ATUALIZADO EM 17/07/2024 - 17H38)
-            </footer>
-            </section>
-            <section class="noticia">
-                <header>
-                    <img class="logo-noticia-terra" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIABQAOAMBIgACEQEDEQH/xAAaAAADAQADAAAAAAAAAAAAAAAABgcFAQME/8QALxAAAQMDAgQEBQUBAAAAAAAAAQIDBAAFEQYhEjFBUQcTInEyQmGBkRQjYqHhCP/EABkBAAIDAQAAAAAAAAAAAAAAAAAGAwQFAf/EAB8RAAICAQQDAAAAAAAAAAAAAAABAgQDERMxcQVBYf/aAAwDAQACEQMRAD8ApF4vJU84hLxajtqKPScKcUOfLfAO1Z0a5NqcAjyVtudMEjP52P3pfuLq2r5OgSfS6y6S2D8yD6gR+aXtQXJ9l8RmFlsBIKlJ2JpKzY7Vm005NPvhDhV8XHJFQj7WpXjfxH09cblIa43Lcw4662g44whBVt2yBWBpbxKjai07fLy1bXWUWllTqm1OglzCFKwDjb4aztGQrjedC6gbecWtc+O7GjrdOc/tqTnPUZVj7GpDpLWCNLaa1RYZsB9Um5MqYSfh8pZSpCgsHcYz/WKbau5sx3HrIWr+BYLM8SfDK1D8bbG5ZJFylw32FoeDTMVK0rceOMkjlgDbJP8AldVh8arNe3nIEqK/a33UKSw6twKQVY2BVtwk9NsfWoQuxXGHZ4V+lQVqtkh9TaFHIC+HGQSOQO4B/irtTDqufbtdaitcTSGnk291aEsFttCU+YruQnbCR83bnsKsFQo//Pt+u96kXsXe5y5oaQx5YkPKXw5K84z7CilDwa1EvSGrpFkuMB7zri+1EUAQFMuBZTuD09Rz7daKALrqnTNtvrPmzELRIZT6H2VcKwOeM9R70lae0ZbbncVic9MeS0fhU6PUOxOM/giiioJ44uabRr07tjHWmoTa04+dFPjR2YsdtiM2lpptPChCRgJFZtw0vp+5yv1VxslulSOrr0ZClH3JG/3ooqcyW23qzQfhxZERUN+My7FUngUwtsKQU9uE7Y+leS1afs1mWtdptUKGtwYWqOwlBUOxIHKiig4cyrFaJk9qfLtcJ6a0pKm5DjCS4kpOQQrGdjyooooA/9k=">
-                </header>
-                <article>
-                <img class="imagem-noticia" src="imagensn/n4.jpg">
-                <p> Brasil teve 1 registro de mulher estuprada a cada 6 minutos em 2023
-                    Dados apontam piora em todos os indicadores de violência contra mulher, diz Anuário Brasileiro da Segurança Pública
-                    
-            </p>
-            </article>
-                <footer> 18.jul.2024 às 10h00
-            </footer>
-            </section>
-        <section class="noticia">
-            <header>
-                <img class="logo-noticia-cnn" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAMAAACfWMssAAAAZlBMVEXMFBf////JAADLAQnMEBP45+fQQEHWXl7mp6f66+nlnp3RPjrwycj68PDqtrXMGhvbd3f9+PjSSEj02dnPMzTsvbzuw8LgiorYaGjZbm3NISDhkZDdgIDVVVXz1NPilpbOKCnpr67IVIhAAAAByUlEQVRIie2U23ajMAxFfQ4m3ClgSi5NaPj/n6xkkxUmMG3fZh44D4mWrG0jWbIxu3bt+k9lVcFY+p7Gwv9URNo3kTVk8cYQYmkL0lu6dLmsSMuuzqAiry1QGuu97+L5VFKsqgOS6E+OlxKzePJ/lZ7Jwdu1kKwRH1YgO10fjo2IDm0i8DuNvQOuSCWc26DtBZt4rsuyHFhhuuYN0EXRTX7HfkT2F5Ax0Nza+VMrpDlMDMcoAYrKXYAPboE8yopm1jrnxgCWEnSlghnOE2A3wUy+RbiGXh7EbUA7gy21PmtQM7zWEsqwTQB1q7TzIPIr0K9BSiEuFUqaJYjjJ3AOIKQIY7oGJUK2P76AWqVsBks5Ov4d2FaoE8UFlJp32h+/+tRK0rqPAUxHxNwAN4vTSlruHsBaA/I1uHkd/ipOUwDlKsD2hwZwDgFkKY0+g1Y68vRTy2nbKqgdLhfoQX5IGVz1bZOrklpAQxkLjrbSqZJsxnv5/ViJpBBOhkqyjQ+5H2TNOC0ki9cnYDHIQSfZmbdg60vDyZsDzYueT4cqa3wAb5leQvRoExnujdfq8ViJDPnw9T3nrMiD2eL8sQ8tXcvVbWzXrl3/VF+IFhnvR1x/WQAAAABJRU5ErkJggg==">
-            </header>
-            <article>
-            <img class="imagem-noticia" src="imagensn/n1.avif">
-            <p> J.D. Vance: por que escolha de vice de Trump preocupa Europa
-                Diplomatas e políticos expressam preocupação com as repetidas críticas de Vance à ajuda dos EUA à Ucrânia.
-            </p>
-            </article>
-             <footer>11 abr 2024 - 16h40 (atualizado às 17h53)
-            </footer>
-        </section>
-            
-         <section class="noticia">
-             <header>
-            <img class="logo-noticia-cnn" src="https://th.bing.com/th/id/OIP.Q1OZHV-NIrqFmREUweptbAAAAA?w=187&h=90&c=7&r=0&o=5&pid=1.7">
-            </header>
-            <article>
-            <img class="imagem-noticia" src="imagensn/n5.jpeg">
-            <p> HGV realiza cirurgia rara para tratar neuralgia do trigêmeo conhecida como a pior dor do mundo
-            </p>
-            </article>
-            <footer>18 julho 2024 - 15h35 
-            </footer>
-         </section>
-
-        <section class ="noticia">
-            <header>
-           <img class="logo-noticia-cnn" src="https://th.bing.com/th?id=ODLS.ca404faa-828b-408d-a4ca-32fdadf143e9&w=32&h=32&qlt=90&pcl=fffffa&o=6&pid=1.2">
-           </header>
-           <article>
-           <img class="imagem-noticia" src="https://newr7-r7-prod.web.arc-cdn.net/resizer/v2/R4TMQNXJIVEOVDY5ZSBQHQR5XY.jpg?auth=0c4cf81683caa2e29307b705fa3a38c2b8c3e54fc84b29c7aaa2f7841d8a79a7&width=770&height=513">
-           <p> Relatório da CGU aponta falhas no programa de merenda escolar entre os anos de 2015 e 2020
-           </p>
-           </article>
-            <footer> 18/07/2024 - 07H40 (ATUALIZADO EM 18/07/2024 - 07H41)
-           </footer>
-        </section>
-
-
-
-
-
+    </main>
+    <footer class="rodape">
+        &copy; 2024 Notícias
+    </footer>
+</body>
+</html>
