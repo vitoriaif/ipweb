@@ -3,205 +3,260 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tags Article, Section, Time, Aside</title>
+    <title>Atividade 11</title>
     <style>
-        body {
+        body{
             clear: both;
         }
-
-        nav {
-            border-bottom: 2px solid #ccc;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        article {
-            width: 60%;
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        aside {
-            width: 20%;
-            float: right;
-            text-align: center;
-        }
-
-        .rodape {
-            width: 100%;
-            text-align: center;
-            font-size: 8px;
-            position: absolute;
-            bottom: 0;
-        }
-
-        footer {
-            font-size: 10px;
-        }
-
-        .menu {
+        .menu{
             background: #ffffff;
             font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
             font-size: 18px;
+            position: fixed;
+            z-index: 1000;
+            width: 100%;
+            height: 15%;
             top: 0px;
             margin: 0px;
-            padding: 10px;
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
+            border-bottom: 2px solid #ccc;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
-
-        .logo {
+        nav{
+            position: absolute;
+            width: 20%;
+            top: 15%;
+            left: 0%;
+            right: 80%;
+            text-align: left;
+            padding: 10px;
+        }
+        article{
+            position: absolute;
+            width:60%;
+            top: 15%;
+            left: 20%;
+            right: 20%;
+            text-align: center;
+            align-items: center;
+            align-content: center;
+        }
+        aside{
+            position: absolute;
+            width: 20%;
+            top: 15%;
+            left: 80%;
+            right: 0%;
+            text-align: center;
+        }
+        footer{
+            font-size: 10px;
+        }
+        .rodape{
+            position: absolute;
+            width: 100%;
+            top: 90%;
+            text-align: center;
+            font-size: 8px;
+        }
+        .logo{
             width: 100px;
             text-align: left;
         }
-
-        .logo-canais {
+        .logo-canais{
             width: 30px;
             padding-left: 10px;
         }
-
-        .links {
+        .links{
             list-style: none;
             justify-content: space-between;
             padding: 0;
             margin: 0;
         }
-
-        .header {
+        .header{
             text-align: center;
-            color: #050507;
+            color: black;
         }
-
-        .noticia {
+        .noticia{
             font-family: 'opensans-regular', Arial, sans-serif;
             color: #333;
+            
             text-align: left;
+            align-items: center;
+            align-content: center;
             font-size: 14px;
             padding: 5px;
             margin: 10px;
-            width: calc(50% - 40px);
+            width: 45%;
             float: left;
         }
-
-        .imagem-noticia {
+        
+        .imagem-noticia{
             width: 180px;
             border-radius: 20px;
             padding: 10px;
-            float: right;
+            float: left;
         }
-
-        .logo-noticia {
-            width: 15px;
+        
+        .text-rodape{
+            font-size: 10px;
         }
-
-        .logo-noticia-terra {
-            width: 50px;
+        p{
+            font-size: 16px;   
         }
-
-        .logo-noticia-cnn {
-            width: 25px;
+        footer{
+            padding-top: 10px;
         }
-
-        p {
-            font-size: 16px;
+        #subtitle{
+            font-size: 10px;
         }
-
-        a:link {
-            color: #9fc1fb;
+        #title-news{
+            font-size: 18px;
+            font-weight: bold;
+            color: rgb(96, 15, 209);
+        }
+        a:link{
+            color: black;
             text-decoration: none;
         }
-
-        a:visited {
-            color: #48b7f7;
+        a:visited{
+            color: black;
         }
-
-        a:hover {
+        a:hover{
             color: #3500a8;
         }
-
-        a:active {
+        a:active{
             color: #FF1493;
         }
+
     </style>
 </head>
 <body>
-    <header class="header">
-        <h1>Notícias</h1>
+    <header class="menu">
+        <div class="logo">
+            <a href="index.html"><img class="logo" src="imagem/360_F_583342356_OE57DmNMJ1wCzwavInyGYzT6Mdg5lUz3-removebg-preview.png"></a>
+        </div>    
     </header>
-    <nav class="menu">
-        <h2>Educação</h2>
-        <h2>Esporte</h2>
-        <h2>Celebridades</h2>
-        <h2>Violência</h2>
-        <h2>Saúde</h2>
-        <h2>Política</h2>
+    <nav>
+        <a href="#" ><h1>Educação<h1></h1></a>
+        <a href="#" ><h1>Saúde<h1></h1></a>
+        <a href="#" ><h1>Esportes<h1></h1></a>
+        <a href="#" ><h1>Política<h1></h1></a>
+        <a href="#" ><h1>Violência</h1></a>
+        <a href="#" ><h1>Celebridades</h1></a>
+        
     </nav>
-    <main>
-        <article>
-            <section class="noticia">
-                <header>
-                    <img class="logo-noticia-terra" src="data:image/jpeg;base64,...">
+    <article>
+        <header class="header">
+            <h1>Notícias</h1>
+        </header>
+        <section>
+            <div class="noticia">
+                <header id="title-news">
+                   Educação
                 </header>
-                <article>
-                    <img class="imagem-noticia" src="imagensn/n3.webp">
-                    <p>Rainha do Mar: Ana Marcela vai a Paris para confirmar legado e colorir o Rio Sena</p>
-                </article>
-                <footer>17 jul 2024 - 05h00</footer>
-            </section>
-            <section class="noticia">
-                <header>
-                    <img class="logo-noticia" src="data:image/png;base64,...">
+                <p id="subtitle">18/07/2024 - 07H40 (ATUALIZADO EM 18/07/2024 - 07H41)</p>
+                <img class="imagem-noticia" src="https://newr7-r7-prod.web.arc-cdn.net/resizer/v2/R4TMQNXJIVEOVDY5ZSBQHQR5XY.jpg?auth=0c4cf81683caa2e29307b705fa3a38c2b8c3e54fc84b29c7aaa2f7841d8a79a7&width=770&height=513">
+                
+                <p>
+                    Relatório da CGU aponta falhas no programa de merenda escolar entre os anos de 2015 e 2020
+                </p>
+                <footer>
+                  fabíola gadelha
+                </footer>
+                
+            </div>
+        </section>
+        <section>
+            <div class="noticia">
+                <header id="title-news">
+                    Saúde
                 </header>
-                <article>
-                    <img class="imagem-noticia" src="imagensn/n2.avif">
-                    <p>Silvio Santos está sob cuidados intensivos em hospital de São Paulo. Apresentador passa por exames após contrair a gripe H1N1</p>
-                </article>
-                <footer>17/07/2024 - 17H20 (ATUALIZADO EM 17/07/2024 - 17H38)</footer>
-            </section>
-            <section class="noticia">
-                <header>
-                    <img class="logo-noticia-terra" src="data:image/jpeg;base64,...">
+                <p id="subtitle">18 julho 2024 - 15h35 </p>
+                <img class="imagem-noticia" src="imagensn/n5.jpeg">
+                <p>
+                    HGV realiza cirurgia rara para tratar neuralgia do trigêmeo conhecida como a pior dor do mundo
+                </p>
+                <footer>
+                    Postado por Ad10+
+                </footer>
+            </div>
+        </section>
+        <section>
+            <div class="noticia">
+                
+                <header id="title-news">
+                    Política
                 </header>
-                <article>
-                    <img class="imagem-noticia" src="imagensn/n4.jpg">
-                    <p>Brasil teve 1 registro de mulher estuprada a cada 6 minutos em 2023. Dados apontam piora em todos os indicadores de violência contra mulher, diz Anuário Brasileiro da Segurança Pública</p>
-                </article>
-                <footer>18 jul 2024 - 10h00</footer>
-            </section>
-            <section class="noticia">
-                <header>
-                    <img class="logo-noticia-cnn" src="data:image/png;base64,...">
+                <p id="subtitle">17/07/2024 11h35</p>
+                <img class="imagem-noticia" src="imagensn/n1.avif">
+                <p>
+                    J.D. Vance: por que escolha de vice de Trump preocupa Europa
+                    Diplomatas e políticos expressam preocupação com as repetidas críticas de Vance à ajuda dos EUA à Ucrânia.
+
+                </p>
+                <footer>
+                   Postado Por BBC
+
+                </footer>
+            </div>
+        </section>
+        <section>
+            <div class="noticia">
+                <header id="title-news">
+                    Celebridades
                 </header>
-                <article>
-                    <img class="imagem-noticia" src="imagensn/n1.avif">
-                    <p>J.D. Vance: por que escolha de vice de Trump preocupa Europa. Diplomatas e políticos expressam preocupação com as repetidas críticas de Vance à ajuda dos EUA à Ucrânia.</p>
-                </article>
-                <footer>11 abr 2024 - 16h40 (atualizado às 17h53)</footer>
-            </section>
-            <section class="noticia">
-                <header>
-                    <img class="logo-noticia-cnn" src="https://th.bing.com/th/id/OIP.Q1OZHV-NIrqFmREUweptbAAAAA?w=187&h=90&c=7&r=0&o=5&pid=1.7">
-                </header>
-                <article>
-                    <img class="imagem-noticia" src="imagensn/n5.jpeg">
-                    <p>HGV realiza cirurgia rara para tratar neuralgia do trigêmeo conhecida como a pior dor do mundo</p>
-                </article>
-                <footer>18 julho 2024 - 15h35</footer>
-            </section>
-            <section class="noticia">
-                <header>
-                    <img class="logo-noticia-cnn" src="https://th.bing.com/th?id=ODLS.ca404faa-828b-408d-a4ca-32fdadf143e9&w=32&h=32&qlt=90&pcl=fffffa&o=6&pid=1.2">
-                </header>
-                <article>
-                    <img class="imagem-noticia" src="https://newr7-r7-prod.web.arc-cdn.net/resizer/v2/R4TMQNXJIVEOVDY5ZSBQHQR5XY.jpg?auth=0c4cf81683caa2e29307b705fa3a38c2b8c3e54fc84b29c7aaa2f7841d8a79a7&width=770&height=513">
-                    <p>Relatório da CGU aponta falhas no programa de merenda escolar entre os anos de 2015 e 2020</p>
-                </article>
-                <footer>18/07/2024 - 07H40 (ATUALIZADO EM 18/07/2024 - 07H41)</footer>
-            </section>
-        </article>
-    </main>
+                <p id="subtitle">17/07/2024 - 17H20 (ATUALIZADO EM 17/07/2024 - 17H38)</p>
+                <img class="imagem-noticia" src="imagensn/n2.avif">
+                <p>
+                    Silvio Santos está sob cuidados intensivos em hospital de São Paulo
+                    Apresentador passa por exames após contrair a gripe H1N1
+                </p>
+                <footer>
+                    Postado por Flavio Ricco
+                </footer>
+            </div>
+        </section>
+    </article>
+    <section>
+        <div class="noticia">
+            <header id="title-news">
+                Esportes
+            </header>
+            <p id="subtitle">17/07/2024 - 05H00</p>
+            <img class="imagem-noticia" src="imagensn/n3.webp">
+            <p>
+                Rainha do Mar: Ana Marcela vai a Paris para confirmar legado e colorir o Rio Sena
+            </p>
+            <footer>
+                Postado por Congonhas
+            </footer>
+        </div>
+    </section>
+    <section>
+        <div class="noticia">
+            <header id="title-news">
+                Violência
+            </header>
+            <p id="subtitle">18.jul.2024 às 10h00</p>
+            <img class="imagem-noticia" src="imagensn/n4.jpg">
+            <p>
+                Brasil teve 1 registro de mulher estuprada a cada 6 minutos em 2023
+                Dados apontam piora em todos os indicadores de violência contra mulher, diz Anuário Brasileiro da Segurança Pública
+            </p>
+            <footer>
+                Postado por celebridadesnews
+            </footer>
+        </div>
+    </section>
+</article>
+        
     <footer class="rodape">
-        &copy; 2024 Notícias
+        <p class="text-rodape">&copy; 2024 Notícias</p>
+        
     </footer>
+    
 </body>
 </html>
