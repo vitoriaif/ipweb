@@ -8,7 +8,7 @@
     <style>
       .galeria {
         display: grid;
-        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-columns: repeat(4, 1fr);
         gap: 10px;
       }
       .galeria img {
@@ -17,6 +17,7 @@
         border-radius: 8px;
       }
       .item1 {
+        grid-column: span 2;
         grid-row: span 2;
       }
       .item2 {
@@ -26,9 +27,7 @@
   </head>
   <body>
     <div class="container my-4">
-      <h1 class="text-center mb-4">Galeria de Gatos</h1>
-
-  
+     
       <div class="galeria">
         <div class="item1">
           <img src="https://th.bing.com/th/id/R.964f5f4e167f7a4c4391260dd5231e6b?rik=jXqdHkQaUKaJhQ&pid=ImgRaw&r=0" alt="Gato 1">
