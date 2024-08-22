@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <title>Gradiente</title>
+
+    <style>
+        .content{
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+        
+        .gradiente1{
+            background: linear-gradient(to top right, rgb(152, 209, 244), blue, rgb(46, 247, 46), red);
+            width: 400px;
+            height: 400px;
+            margin: 10px;
+            box-sizing: border-box;
+
+        }
+        .gradiente2{
+            background: radial-gradient(circle, red, yellow, green);
+            width: 400px;
+            height: 400px;
+            margin: 10px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        
+        <div class="gradiente1"></div>
+
+        <div class="gradiente2"></div> 
+        
+    </div>
+  
+
+
+
+</body>
+</html>

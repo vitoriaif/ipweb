@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <title>Box Shadow</title>
+    <style>
+       .content{
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .box1{
+            display: flex;
+            background-color: #eba39d;
+            width: 500px;
+            height: 200px;
+            border-radius: 10px;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            box-shadow: 0px 30px 10px -20px rgba(0, 0, 0, .7);
+            
+        }
+        
+        .box2{
+            width: 400px;
+            height: 100px;
+            border: 1px solid white;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+            border-style: dashed;
+        }
+        .box3{
+            display: flex;
+            background-color: #ede799;
+            width: 500px;
+            height: 200px;
+            border-radius: 10px;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            box-shadow: 0px 30px 10px -20px rgba(0, 0, 0, .7);
+            
+        }
+        .box4{
+            width: 400px;
+            height: 100px;
+            border: 1px solid white;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+            border-style: dashed;
+        }
+        h2{
+            color: white;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="box1">
+            <div class="box2">
+                <h2>Shadow 1</h2>
+            </div>   
+        </div>
+    
+        <div class="box3">
+            <div class="box4">
+                <h2>Shadow 2</h2>
+            </div>   
+        </div>
+    </div>  
+
+</body>
+</html>
