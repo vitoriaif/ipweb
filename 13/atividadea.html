@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <title>Box Sizing</title>
+
+    <style>
+        .conteudo{
+            float: left;
+            padding: 20px;
+            width: 30%;
+        
+        }
+        .caixas{
+            width: 200px;
+            height: 200px;
+            border: 1px solid;
+            border-color: red;
+            float: left;
+            -webkit-border: 1px;
+            -moz-border: 1px;
+        }
+        .box1{
+            width: 100px;
+            height: 200px;
+            border: 10px solid;
+            padding: 10px;
+            border-color: black;
+            background-color: blue;
+            float: left;
+            -webkit-border: 10px;
+            -moz-border: 10px;
+        }
+        .box2{
+            width: 100px;
+            height: 200px;
+            border: 10px solid;
+            padding: 10px;
+            border-color: black;
+            background-color: yellow;
+            float: left;
+            -webkit-border: 10px;
+            -moz-border: 10px;
+        }
+        .box3{
+            width: 100px;
+            height: 200px;
+            border: 10px solid;
+            padding: 10px;
+            border-color: black;
+            background-color: blue;
+            box-sizing: border-box;
+            float: left;
+            -webkit-border: 10px;
+            -moz-border: 10px;
+        }
+        .box4{
+            width: 100px;
+            height: 200px;
+            border: 10px solid;
+            padding: 10px;
+            border-color: black;
+            background-color: yellow;
+            box-sizing: border-box;
+            float: left;
+            -webkit-border: 10px;
+            -moz-border: 10px;
+        }
+        p{
+            font-size: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteudo">
+        <h1>Sem box sizing</h1>
+        <div class="caixas">
+            <div class="box1">
+                <p>width: 100px</p>
+                <p>height: 200px</p>
+                <p>border:10px</p>
+                <p>paddind: 10px</p>
+            </div>
+            <div class="box2">
+                <p>width: 100px</p>
+                <p>height: 200px</p>
+                <p>border:10px</p>
+                <p>paddind: 10px</p>
+            </div>
+        </div>
+    </div>
+    <div class="conteduo">
+        <h1>Com box sizing</h1>
+    <div class="caixas">
+        <div class="box3">
+            <p>width: 100px</p>
+            <p>height: 200px</p>
+            <p>border:10px</p>
+            <p>paddind: 10px</p>
+        </div>
+        <div class="box4">
+            <p>width: 100px</p>
+            <p>height: 200px</p>
+            <p>border:10px</p>
+            <p>paddind: 10px</p>
+        </div>
+    </div>
+    </div>    
+   
+
+</body>
+</html>
