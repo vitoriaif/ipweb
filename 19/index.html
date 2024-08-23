@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile - Nina Mcitiere</title>
+    <title>Atividade 19</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         .profile-header {
@@ -14,7 +14,7 @@
             width: 150px;
             height: 150px;
             border-radius: 50%;
-            border: 3px solid #007bff; 
+            border: 3px solid rgba(0, 0, 0, 0); /* Borda transparente */
             object-fit: cover;
             margin-bottom: 20px;
         }
@@ -27,15 +27,19 @@
             color: #777;
         }
         .stats {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-top: 30px;
+            width: 100%;
+            max-width: 300px;
+            margin: 30px auto 0;
             font-size: 16px;
         }
         .stat {
-            margin: 10px 0;
-            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        .stat .label {
+            font-weight: normal;
         }
         .stat .number {
             font-size: 22px;
