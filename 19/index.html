@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Nina Mcitiere</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .profile-header {
+            text-align: center;
+            padding: 50px 0;
+        }
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid #007bff; 
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+        .profile-name {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .profile-title {
+            font-size: 18px;
+            color: #777;
+        }
+        .stats {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 30px;
+            font-size: 16px;
+        }
+        .stat {
+            margin: 10px 0;
+            text-align: center;
+        }
+        .stat .number {
+            font-size: 22px;
+            font-weight: bold;
+        }
+        .follow-button {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="profile-header">
+            
+            <img src="img/meni.jpg" alt="Profile Picture" class="profile-pic">
+            <div class="profile-name">Nina Mcitiere</div>
+            <div class="profile-title">Software Engineer</div>
+        </div>
+
+        <div class="stats">
+            <div class="stat">
+                <div class="label">Followers</div>
+                <div class="number">1,322</div>
+            </div>
+            <div class="stat">
+                <div class="label">Following</div>
+                <div class="number">543</div>
+            </div>
+            <div class="stat">
+                <div class="label">Friends</div>
+                <div class="number">13,287</div>
+            </div>
+        </div>
+
+        <div class="text-center follow-button">
+            <button class="btn btn-primary">Follow</button>
+        </div>
+    </div>
+
+</body>
+</html>
