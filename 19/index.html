@@ -1,57 +1,55 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Atividade 19</title>
+    <title>Atividade 19</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
-        .cabecalho-perfil {
+        .profile-header {
             text-align: center;
             padding: 50px 0;
         }
-        .foto-perfil {
+        .profile-pic {
             width: 150px;
             height: 150px;
             border-radius: 50%;
-            border: 4px solid transparent; /* Borda transparente inicial */
-            border-image: linear-gradient(to right, #ff7f50, #ff4500, #ff4500, #ff7f50);
-            border-image-slice: 1;
+            border: 4px solid rgba(0, 0, 0, 0.1); 
             object-fit: cover;
             margin-bottom: 20px;
         }
-        .nome-perfil {
+        .profile-name {
             font-size: 24px;
             font-weight: bold;
         }
-        .titulo-perfil {
+        .profile-title {
             font-size: 18px;
             color: #777;
         }
-        .estatisticas {
+        .stats {
             width: 100%;
             max-width: 300px;
             margin: 30px auto 0;
             font-size: 16px;
         }
-        .estatistica {
+        .stat {
             display: flex;
             justify-content: space-between;
             padding: 10px 0;
             border-bottom: 1px solid #ddd;
         }
-        .estatistica .rotulo {
-            font-weight: bold; 
+        .stat .label {
+            font-weight: bold;
         }
-        .estatistica .numero {
+        .stat .number {
             font-size: 22px;
             font-weight: normal;
-            color: #87CEEB;
+            color: #87CEEB; 
         }
-        .botao-seguir {
+        .follow-button {
             margin-top: 20px;
         }
-        .botao-seguir .btn {
+        .follow-button .btn {
             font-size: 18px; 
             padding: 10px 20px; 
         }
@@ -60,30 +58,30 @@
 <body>
 
     <div class="container">
-        <div class="cabecalho-perfil">
-           
-            <img src="img/meni.jpg" alt="Foto de Perfil" class="foto-perfil">
-            <div class="nome-perfil">Nina Mcintire</div>
-            <div class="titulo-perfil">Engenheira de Software</div>
+        <div class="profile-header">
+            
+            <img src="img/meni.jpg" alt="Profile Picture" class="profile-pic">
+            <div class="profile-name">Nina Mcintire</div>
+            <div class="profile-title">Software Engineer</div>
         </div>
 
-        <div class="estatisticas">
-            <div class="estatistica">
-                <div class="rotulo">Seguidores</div>
-                <div class="numero">1,322</div>
+        <div class="stats">
+            <div class="stat">
+                <div class="label">Followers</div>
+                <div class="number">1,322</div>
             </div>
-            <div class="estatistica">
-                <div class="rotulo">Seguindo</div>
-                <div class="numero">543</div>
+            <div class="stat">
+                <div class="label">Following</div>
+                <div class="number">543</div>
             </div>
-            <div class="estatistica">
-                <div class="rotulo">Amigos</div>
-                <div class="numero">13,287</div>
+            <div class="stat">
+                <div class="label">Friends</div>
+                <div class="number">13,287</div>
             </div>
         </div>
 
-        <div class="text-center botao-seguir">
-            <button class="btn btn-primary">Seguir</button>
+        <div class="text-center follow-button">
+            <button class="btn btn-primary">Follow</button>
         </div>
     </div>
 
