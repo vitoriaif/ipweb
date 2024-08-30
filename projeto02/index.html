@@ -1,0 +1,245 @@
+<!doctype html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Pesquisa de Produtos</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+
+    <div class="container mt-4">
+        <div class="d-flex justify-content-between mb-3">
+            <button class="btn btn-primary">
+                <i class="fas fa-clock"></i> Pedidos Recentes
+            </button>
+            <button class="btn btn-primary">
+                <i class="fas fa-paper-plane"></i> Enviar Cliente
+            </button>
+            <button class="btn btn-primary">
+                <i class="fas fa-dollar-sign"></i> Receber Pagamento
+            </button>
+            <button class="btn btn-primary">
+                <i class="fas fa-list-alt"></i> Todos os Pedidos
+            </button>
+            <button class="btn btn-primary">
+                <i class="fas fa-plus"></i> Novo Pedido
+            </button>
+            <button class="btn btn-primary">
+                <i class="fas fa-home"></i> Página Principal
+            </button>
+        </div>
+
+        <div class="mb-4">
+            <div class="row pesquisar">
+                <div class="col-md-10">
+                    <h4>Pesquisa de Produtos</h4>
+                </div>
+                <div class="col-md-2">
+                    <div>
+                        <button type="button" class="btn btn-default btn-sm mr-2">
+                            <i class="fas fa-window-minimize"></i>
+                        </button>
+                        <button type="button" class="btn btn-default btn-sm">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <form id="searchForm">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="descricao">Descrição</label>
+                        <input type="text" id="descricao" class="form-control" placeholder="Digite a descrição do produto">
+                    </div>
+                </div>
+                <div class="form-row">   
+                    <div class="form-group col-md-6 d-flex align-items-end">
+                        <button type="button" class="btn btn-primary mr-2">
+                            <i class="fas fa-search"></i> Pesquisar
+                        </button>
+                        <button type="reset" class="btn btn-secondary mr-2">
+                            <i class="fas fa-sync"></i> Recarregar
+                        </button>
+                        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#novoproduto">
+                            <i class="fas fa-plus-circle"></i> Novo
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+
+        <div class="d-flex justify-content-between align-items-center mb-2">
+            <div>
+                <label for="numeroporpagina">Registros por página:</label>
+                <select id="numeroporpagina" class="form-control d-inline-block w-auto">
+                    <option value="5">5</option>
+                    <option value="1" selected="">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </div>
+            <div>
+                <input type="text" class="form-control" placeholder="Buscar na tabela">
+            </div>
+        </div>
+
+
+        <div class="table-responsive">
+            <table class="table table-bordered">
+                <thead class="thead-light">
+                    <tr>
+                        <th>ID</th>
+                        <th>Descrição</th>
+                        <th>Situação</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="produtos">
+                    <tr>
+                        <td>1</td>
+                        <td>Pizza</td>
+                        <td><span class="badge badge-success">Ativo</span></td>
+                        <td>
+                            <button class="btn btn-sm btn-light text-secondary" data-toggle="tooltip" data-placement="top" title="Ver Detalhes">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <button class="btn btn-sm btn-light text-secondary" data-toggle="tooltip" data-placement="top" title="Editar">
+                                <i class="fas fa-edit"></i>
+                            </button>
+                            <button class="btn btn-sm btn-light text-primary" data-toggle="modal" data-placement="top" data-target="#deletar" title="Excluir">
+                                <i class="fas fa-trash"></i>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Refrigerante</td>
+                        <td><span class="badge badge-success">Ativo</span></td>
+                        <td>
+                            <button class="btn btn-sm btn-light text-secondary" data-toggle="tooltip" data-placement="top" title="Ver Detalhes">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <button class="btn btn-sm btn-light text-secondary" data-toggle="tooltip" data-placement="top" title="Editar">
+                                <i class="fas fa-edit"></i>
+                            </button>
+                            <button class="btn btn-sm btn-light text-primary" data-toggle="modal" data-target="#deletar" title="Excluir">
+                                <i class="fas fa-trash"></i>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Cajuína</td>
+                        <td><span class="badge badge-secondary">Inativo</span></td>
+                        <td>
+                            <button class="btn btn-sm btn-light text-secondary" data-toggle="tooltip" data-placement="top" title="Ver Detalhes">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <button class="btn btn-sm btn-light text-secondary" data-toggle="tooltip" data-placement="top" title="Editar">
+                                <i class="fas fa-edit"></i>
+                            </button>
+                            <button class="btn btn-sm btn-light text-primary" data-toggle="modal" data-target="#deletar" title="Excluir">
+                                <i class="fas fa-trash"></i>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Borda</td>
+                        <td><span class="badge badge-success">Ativo</span></td>
+                        <td>
+                            <button class="btn btn-sm btn-light text-secondary" data-toggle="tooltip" data-placement="top" title="Ver Detalhes">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <button class="btn btn-sm btn-light text-secondary" data-toggle="tooltip" data-placement="top" title="Editar">
+                                <i class="fas fa-edit"></i>
+                            </button>
+                            <button class="btn btn-sm btn-light text-primary" data-toggle="modal" data-target="#deletar" title="Excluir">
+                                <i class="fas fa-trash"></i>
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+        <div class="modal fade" id="deletar" tabindex="-1" aria-labelledby="deletarLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="deletarLabel">Deseja realmente remover esse registro?</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-light" data-dismiss="modal">
+                            <i class="fas fa-times"></i> Não
+                        </button>
+                        <button type="button" class="btn btn-primary">
+                            <i class="fas fa-check"></i> Sim
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="novoproduto" tabindex="-1" aria-labelledby="novoprodutoLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="novoprodutoLabel">Novo Produto</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="nomeproduto">Nome</label>
+                                <input type="text" class="form-control" id="nomeproduto" placeholder="Digite o nome do produto">
+                            </div>
+                            <div class="form-group">
+                                <label for="precoproduto">Preço</label>
+                                <input type="text" class="form-control" id="precoproduto" placeholder="Digite o preço do produto">
+                            </div>
+                            <div class="form-group">
+                                <label for="produtocategoria">Categoria</label>
+                                <select class="form-control" id="produtocategoria">
+                                    <option>Selecione uma categoria</option>
+                                    <option>Alimentos</option>
+                                    <option>Bebidas</option>
+                                    <option>Outros</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="statusproduto">Situação</label>
+                                <select class="form-control" id="statusproduto">
+                                    <option>Ativo</option>
+                                    <option>Inativo</option>
+                                </select>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                        <button type="button" class="btn btn-primary">Salvar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+
+
+
+</body>
+</html>
