@@ -6,52 +6,101 @@
     <title>Atividade 19</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
-        .profile-header {
-            text-align: center;
-            padding: 50px 0;
-        }
-        .profile-pic {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            border: 7px solid rgba(0, 0, 0, 0.1); 
-            object-fit: cover;
-            margin-bottom: 20px;
-        }
-        .profile-name {
-            font-size: 24px;
-            font-weight: bold;
-        }
-        .profile-title {
+       .box{
+    width: 70px;
+    height: 70px;
+    padding: 10px;
+    background: #F4F4F4;
+    border: 1px solid #E5E5E5;
+    border-radius: 2px;
+    text-align: center;
+    box-sizing: border-box;
+
+}
+
+.row{
+    justify-content: space-around;
+}
+
+.conteudo{
+    width: 30%;
+    padding: 10px;
+}
+
+.profile-card {
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+.follow-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.follow-btn:hover {
+    background-color: #0056b3;
+}
+
+    
+.profile-header {
+        ext-align: center;
+        padding: 50px 0;
+ }
+.profile-pic {
+         width: 150px;
+         height: 150px;
+        border-radius: 50%;
+        border: 7px solid rgba(0, 0, 0, 0.1); 
+        object-fit: cover;
+        margin-bottom: 20px;
+ }
+.profile-name {
+      font-size: 24px;
+      font-weight: bold;
+}
+.profile-title {
             font-size: 18px;
             color: #777;
-        }
-        .stats {
-            width: 100%;
-            max-width: 300px;
-            margin: 30px auto 0;
-            font-size: 16px;
-        }
-        .stat {
-            display: flex;
-            justify-content: space-between;
-            padding: 10px 0;
-            border-bottom: 1px solid #ddd;
-        }
-        .stat .label {
+}
+ .stats {
+        width: 100%;
+        max-width: 300px;
+        margin: 30px auto 0;
+        font-size: 16px;
+}
+.stat {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0;
+        border-bottom: 1px solid #ddd;
+}
+.stat .label {
             font-weight: bold;
-        }
-        .stat .number {
-            font-size: 22px;
-            font-weight: normal;
-            color: #87CEEB; 
-        }
-        .follow-button {
+}
+ .stat .number {
+        font-size: 22px;
+        font-weight: normal;
+        color: #87CEEB; 
+        
+}
+.follow-button {
             margin-top: 20px;
-        }
-        .follow-button .btn {
-            font-size: 18px; 
-            padding: 10px 20px; 
+ }
+.follow-button .btn {
+        font-size: 18px; 
+        padding: 10px 20px; 
         }
     </style>
 </head>
