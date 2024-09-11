@@ -1,4 +1,4 @@
-$(document).ready(function () {
+(document).ready(function () {
     $("#consultar").click(function () {
       var cep = $("#cep").val();
       var url = "https://viacep.com.br/ws/" + cep + "/json/";
@@ -8,6 +8,7 @@ $(document).ready(function () {
         $("#bairro").val(retorno.bairro);
         $("#cidade").val(retorno.localidade);
         $("#uf").val(retorno.uf);
+        $("#ibge").val(retorno.ibge);
       });
     });
 
@@ -17,5 +18,6 @@ $(document).ready(function () {
       $("#bairro").val("");
       $("#cidade").val("");
       $("#uf").val("");
+      $("#ibge").val("");
     });
   });
