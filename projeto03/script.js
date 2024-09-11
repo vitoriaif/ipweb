@@ -1,4 +1,4 @@
-(document).ready(function () {
+$(document).ready(function () {
     $("#consultar").click(function () {
       var cep = $("#cep").val();
       var url = "https://viacep.com.br/ws/" + cep + "/json/";
