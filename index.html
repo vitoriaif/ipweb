@@ -1,36 +1,123 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title> Maria Vitoria Da Silva Batista</title></title>
-    </head>
-    <body>
-     <h1> Maria Vitoria </h1>
-     <a href="01/"> Atividade 01 </a>- Links <br>
-     <a href="02/">Atividade 02 </a>- Tags <br>
-     <a href="03/">Atividade 03 </a>- Tabelas <br>
-     <a href="04/">Atividade 04 </a>- Formulários <br>
-     <a href="05">Atividade 05 </a>- CSS <br>
-     <a href="projeto01">Projeto 01 </a>- Projeto01<br>
-     <a href="06">Atividade 06 </a>- Tag Div e Span<br>
-     <a href="07">Atividade 07</a>-Famílias de Fontes<br>
-     <a href="08">Atividade 08 </a>-Box Model <br>
-     <a href="09">Atividade 09 </a> Posicionamento<br>
-     <a href="10">Atividade 10 </a> Formatação de Link, Tags nav, header e footer <br>
-     <a href="11">Atividade 11 </a> Tag Article Section Time Aside <br>
-     <a href="12">Atividade 12 </a> Atributo Data <br>
-     <a href="13">Atividade 13 </a>Introdução ao CSS3 <br>
-     <a href="14">Atividade 14 </a> Transparência, Sombra e Gradiente<br>
-     <a href="15">Atividade 15 </a> Transition Animation <br>
-     <a href="16">Atividade 16 </a>Design Responsivo Bootstrap <br>
-     <a href="17">Atividade 17 </a> Sistema de grid <br>
-     <a href="18">Atividade 18</a> Formulários tabelas <br>
-     <a href="19">Atividade 19 </a> botões e imgens responsivas <br>
-     <a href="20">Atividade 20 </a> barra de navegação<br>
-     <a href="projeto02"> Projeto 02 </a> Projeto 02 <br>
-    <a href="21">Atividade 21 </a>  Alerts tooltip Popover <br>
-    <a href="22">Atividade 22 </a> Incluindo javaScript no HTML  <br>
-    <a href="23">Atividade 23 </a> Manipulação de Arrays <br>
-    <a href="23">Atividade 24 </a> Jquery <br>
-    <a href="projeto03"> Projeto 03 </a> Projeto 03 <br>
-    </body>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .activity-list,
+        .project-list {
+            list-style: none;
+            padding: 0;
+            width: 48%;
+        }
+
+        .activity-list li,
+        .project-list li {
+            background: #fff;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .activity-list a,
+        .project-list a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .activity-list a:hover,
+        .project-list a:hover {
+            text-decoration: underline;
+        }
+
+        .project-list {
+            margin-left: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .activity-list,
+            .project-list {
+                width: 100%;
+                margin: 0;
+            }
+
+            .project-list {
+                margin-left: 0;
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Maria Vitoria Da Silva Batista</h1>
+    </header>
+    <main>
+        <div class="container">
+            <ul class="activity-list">
+                <li><a href="01/">Atividade 01</a> - Links</li>
+                <li><a href="02/">Atividade 02</a> - Tags</li>
+                <li><a href="03/">Atividade 03</a> - Tabelas</li>
+                <li><a href="04/">Atividade 04</a> - Formulários</li>
+                <li><a href="05/">Atividade 05</a> - CSS</li>
+                <li><a href="06/">Atividade 06</a> - Tag Div e Span</li>
+                <li><a href="07/">Atividade 07</a> - Famílias de Fontes</li>
+                <li><a href="08/">Atividade 08</a> - Box Model</li>
+                <li><a href="09/">Atividade 09</a> - Posicionamento</li>
+                <li><a href="10/">Atividade 10</a> - Formatação de Link, Tags nav, header e footer</li>
+                <li><a href="11/">Atividade 11</a> - Tag Article Section Time Aside</li>
+                <li><a href="12/">Atividade 12</a> - Atributo Data</li>
+                <li><a href="13/">Atividade 13</a> - Introdução ao CSS3</li>
+                <li><a href="14/">Atividade 14</a> - Transparência, Sombra e Gradiente</li>
+                <li><a href="15/">Atividade 15</a> - Transition Animation</li>
+                <li><a href="16/">Atividade 16</a> - Design Responsivo Bootstrap</li>
+                <li><a href="17/">Atividade 17</a> - Sistema de grid</li>
+                <li><a href="18/">Atividade 18</a> - Formulários tabelas</li>
+                <li><a href="19/">Atividade 19</a> - Botões e imagens responsivas</li>
+                <li><a href="20/">Atividade 20</a> - Barra de navegação</li>
+                <li><a href="21/">Atividade 21</a> - Alerts tooltip Popover</li>
+                <li><a href="22/">Atividade 22</a> - Incluindo JavaScript no HTML</li>
+                <li><a href="23/">Atividade 23</a> - Manipulação de Arrays</li>
+                <li><a href="24/">Atividade 24</a> - jQuery</li>
+            </ul>
+            <ul class="project-list">
+                <li><a href="projeto01">Projeto 01</a> - Projeto01</li>
+                <li><a href="projeto02">Projeto 02</a> - Projeto 02</li>
+                <li><a href="projeto03">Projeto 03</a> - Projeto 03</li>
+            </ul>
+        </div>
+    </main>
+</body>
 </html>
