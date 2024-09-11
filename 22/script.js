@@ -9,5 +9,5 @@ function escreverNumeros() {
         }
     } else {
         div.innerHTML = "Por favor, insira um número válido!";
-  
+    }
 }
