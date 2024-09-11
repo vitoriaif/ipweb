@@ -13,14 +13,12 @@ function escreverNumeros() {
 }
 
 
-function calcularRaiz() {
-    let numero = parseFloat(prompt("Digite um número para calcular a raiz quadrada:"));
-    
+function calcularRaiz(numero) {
     if (!isNaN(numero) && numero >= 0) {
         let raiz = Math.sqrt(numero);
         alert(`A raiz quadrada de ${numero} é ${raiz}`);
     } else {
-        alert("Por favor, insira um número válido e não negativo.");
+        alert("Número inválido.");
     }
 }
 
