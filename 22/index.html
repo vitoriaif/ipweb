@@ -4,16 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atividade 22</title>
+    
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+   
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="script.js" defer></script> 
-    <script src="raiz.js" defer></script> 
+    
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <h1>Exemplo de Modal com Bootstrap</h1>
-    <button class="btn btn-primary" onclick="mostrarModal()">Mostrar Modal</button>
+    <h1>Exercícios de JavaScript</h1>
+
+    <h2>Contagem de 1 a n</h2>
+    <button class="btn btn-primary" onclick="escreverNumeros()">Contar até n</button>
+    <div id="resultado"></div> 
+
+    <hr>
+
+    <h2>Calculadora de Raiz Quadrada</h2>
+    <button class="btn btn-secondary" onclick="calcularRaiz()">Calcular Raiz</button>
+
+    <hr>
+
+    <h2>Exibir Texto em Modal</h2>
+    <button class="btn btn-info" onclick="mostrarModal()">Mostrar Modal</button>
+
+   
     <div class="modal fade" id="meuModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -24,23 +41,13 @@
                     </button>
                 </div>
                 <div class="modal-body" id="modalBody">
-                    
+                   
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
                 </div>
             </div>
         </div>
-
-    <h1>Contagem de 1 a n</h1>
-    <button onclick="escreverNumeros()">Contar até n</button>
-    <div id="resultado"></div> 
-
-    <hr>
-
-    <h1>Calculadora de Raiz Quadrada</h1>
-    <a href="#" onclick="calcularRaiz(25)">Raiz de 25</a><br>
-    <a href="#" onclick="calcularRaiz(36)">Raiz de 36</a><br>
-    <a href="#" onclick="calcularRaiz(49)">Raiz de 49</a><br>
+    </div>
 </body>
 </html>
