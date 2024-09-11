@@ -9,9 +9,5 @@ function escreverNumeros() {
         }
     } else {
         div.innerHTML = "Por favor, insira um número válido!";
-    }
-    function calcularRaiz(numero) {
-        let raiz = Math.sqrt(numero); 
-        alert(`A raiz quadrada de ${numero} é ${raiz}`); 
-    }
+  
 }
